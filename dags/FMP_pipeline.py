@@ -15,7 +15,8 @@ from bs4 import BeautifulSoup
 @dag(
     dag_id="sp500_company_profile_etl",
     start_date=datetime(2026, 7, 26),
-    schedule="30 8  * * 6",          # Change to "*/5 * * * *" later if needed
+    schedule="" \
+    "30 8  * * 6",          # Change to "*/5 * * * *" later if needed
     catchup=False,
     tags=["sp500", "api"]
 )
